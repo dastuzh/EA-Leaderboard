@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Efficient Algorithms 2022 Practical Leaderboard</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <script src="./js/numeral.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  
+</head>
+
+<body>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Efficient Algorithms 2022</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+          class="navbar-toggler-icon"></span></button>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="./2021/index.html" class="nav-link text-white">Leaderboard 2021</a>
+        </li>
+        <li class="nav-item">
+          <a href="snap.html" class="nav-link text-white">SNAP</a>
+        </li>
+        <li class="nav-item">
+          <a href="imdb.html" class="nav-link text-white">IMDB</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Page content-->
+  <div  id="app">
+    <div class="container">
+      <h1 class="mt-5">Runtime Performance Benchmarking</h1>
+      <p><strong>Last Update Time: {{last_update_time}}</strong></p>
+      <p>We check your code on our private datasets every midnight. Our feedback to your code will be uploaded to your
+        GitHub repository. If your code is correct, we will upload your benchmarking results to this leaderboard. The
+        first time you check in your code, please send me an email so we know you have finished your program. We will then manually run it on the benchmarking machine to make sure it runs smoothly.</p>
+      <p>The table shows the preprocessing time (ms) and the execution time (ms) of the queries on our private
+        datasets. The preprocessing time includes the time for reading data, parsing data and constructing the factors.
+        The execution time includes time for evaluating the queries and outputting the query results. The columns SNAP Total, SNAP Cyclic and SNAP Acyclic show the evaluation time of all snap queries, cyclic snap
+        queries and acyclic snap queries, respectively. <strong>We use only the execution time to assess the performance of your code. </strong> (the preprocessing time is ignored)
+      </p>
+      <p>
+        The table is ordered by the <strong>execution time</strong> of all snap queries in ascending order. The time "X" means the queries require more than four hours to complete on our machine. For these cases, we tested their correctness on smaller datasets.
+         Check the execution
+        of individual queries at pages <a href="./snap.html">SNAP</a> and <a href="./imdb.html">IMDB</a>. </p>
+    </div>
+    <br>
+    <div class="container-fluid">
+      <table class="table table-hover table-sm">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Repository</th>
+            
+            <th class="text-right " scope="col">SNAP Total</th>
+            <th class="text-right " scope="col">IMDB Total</th>
+            <th class="text-right " scope="col">Submission</th>
+            <th class="text-right " scope="col">Entry Update</th>
+            <th class="text-right " scope="col">Preprocessing</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="(student, i) in formatted_students">
+            <th scope="row">{{i+1}}</th>
+            <td>{{student.repository}}</td>
+            
+            <td class="text-right ">{{student['snap_execution'] | formatNumber}}</td>
+            <td class="text-right ">{{student['imdb_acyclic_execution'] | formatNumber}}</td>
+            <td class="text-right ">{{student['submission time']}}</td>
+            <td class="text-right ">{{student['update time']}}</td>
+            <td class="text-right ">{{student['preprocessing time (ms)'] | formatNumber}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+
+  </div>
+  <!-- Bootstrap core JS-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/data.js"></script>
+  <script src="js/scripts.js"></script>
+
+
+</body>
+
+</html>
