@@ -1,3 +1,41 @@
-const students=[]
-    const last_update_time='29/03/2022 22:34:15'
+const students=[
+    {
+        "repository": "EA21-17",
+        "preprocessing time (ms)": "407460",
+        "execution time (ms)": "847905",
+        "submission time": "29/03/2022 20:34:12",
+        "update time": "29/03/2022 22:51:16",
+        "timestamp": 1648587076,
+        "facebook-triangle-full": 3533,
+        "facebook-triangle-count": 2446,
+        "facebook-1-path-full": 56,
+        "facebook-1-path-count": 44,
+        "facebook-2-path-full": 4605,
+        "facebook-2-path-count": 3327,
+        "twitter-triangle-full": 10282,
+        "twitter-triangle-count": 8073,
+        "twitter-1-path-full": 691,
+        "twitter-1-path-count": 553,
+        "twitter-2-path-full": 28263,
+        "twitter-2-path-count": 22151,
+        "wiki-triangle-full": 578,
+        "wiki-triangle-count": 471,
+        "wiki-1-path-full": 35,
+        "wiki-1-path-count": 28,
+        "wiki-2-path-full": 1235,
+        "wiki-2-path-count": 923,
+        "enron-triangle-full": 2980,
+        "enron-triangle-count": 2376,
+        "enron-1-path-full": 145,
+        "enron-1-path-count": 120,
+        "enron-2-path-full": 12904,
+        "enron-2-path-count": 9293,
+        "query1": 169,
+        "query2": 46,
+        "query3": 2096,
+        "query4": 2202,
+        "query5": 1375
+    }
+]
+    const last_update_time='29/03/2022 22:51:19'
     
