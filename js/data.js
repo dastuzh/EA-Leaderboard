@@ -368,7 +368,44 @@ const students=[
         "query3": "",
         "query4": "",
         "query5": ""
+    },
+    {
+        "repository": "EA22-01",
+        "preprocessing time (ms)": "1133022",
+        "execution time (ms)": "2545956",
+        "submission time": "25/05/2022 23:56:03",
+        "update time": "26/05/2022 13:47:55",
+        "timestamp": 1653565675,
+        "facebook-triangle-full": 113453,
+        "facebook-triangle-count": 52617,
+        "facebook-1-path-full": 1438,
+        "facebook-1-path-count": 780,
+        "facebook-2-path-full": 154180,
+        "facebook-2-path-count": 74721,
+        "twitter-triangle-full": 178754,
+        "twitter-triangle-count": 91719,
+        "twitter-1-path-full": 11987,
+        "twitter-1-path-count": 6358,
+        "twitter-2-path-full": 657041,
+        "twitter-2-path-count": 323721,
+        "wiki-triangle-full": 9360,
+        "wiki-triangle-count": 4829,
+        "wiki-1-path-full": 862,
+        "wiki-1-path-count": 474,
+        "wiki-2-path-full": 36927,
+        "wiki-2-path-count": 18261,
+        "enron-triangle-full": 55182,
+        "enron-triangle-count": 28239,
+        "enron-1-path-full": 3338,
+        "enron-1-path-count": 1824,
+        "enron-2-path-full": 449327,
+        "enron-2-path-count": 216293,
+        "query1": 7180,
+        "query2": 10235,
+        "query3": 25334,
+        "query4": 3561,
+        "query5": 7961
     }
 ]
-    const last_update_time='26/05/2022 01:56:05'
+    const last_update_time='26/05/2022 13:53:46'
     
